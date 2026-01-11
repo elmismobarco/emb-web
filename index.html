@@ -1,193 +1,172 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>El Mismo Barco | Sergio Lubezky A.</title>
+    <meta name="description" content="Navegar es un acto colectivo. Una reflexión sobre el trabajo en equipo, la empatía y la inteligencia compartida para alcanzar el bien común.">
+    
+    <meta property="og:title" content="El Mismo Barco | Sergio Lubezky A.">
+    <meta property="og:description" content="Navegar es un acto colectivo. Una reflexión sobre el trabajo en equipo, la empatía y la inteligencia compartida.">
+    <meta property="og:image" content="foto-barco.jpg">
+
+    <style>
+        /* Estilos Base */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .content-box {
+            max-width: 750px;
+            text-align: center;
+            font-size: 1.35rem;
+            letter-spacing: 0.2px;
+        }
+
+        .content-box a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        .content-box a:hover {
+            border-bottom: 1px solid #000;
+            color: #555;
+        }
+
+        footer {
+            padding: 40px 20px 60px 20px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .profile-img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            opacity: 0.6; /* Increased slightly for better visibility */
+            border: 1px solid #f0f0f0;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-img:hover {
+            opacity: 1;
+        }
+
+        .name-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .name {
+            display: block;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            transition: color 0.3s ease;
+        }
+
+        .name-link:hover .name {
+            color: #666;
+        }
+
+        .social-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            font-size: 0.85rem;
+        }
+
+        .social-nav li {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-nav a {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-nav a:hover {
+            color: #000;
+        }
+
+        /* Separador guion - Improved contrast */
+        .social-nav li:not(:last-child)::after {
+            content: "-";
+            margin-left: 12px;
+            color: #ccc; 
+        }
+
+        @media (max-width: 600px) {
+            .content-box { font-size: 1.2rem; }
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="es"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;El Mismo Barco | Sergio Lubezky A.&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="Navegar es un acto colectivo. Una reflexión sobre el trabajo en equipo, la empatía y la inteligencia compartida para alcanzar el bien común."&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:title" content="El Mismo Barco | Sergio Lubezky A."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:description" content="Navegar es un acto colectivo. Una reflexión sobre el trabajo en equipo, la empatía y la inteligencia compartida."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:image" content="foto-barco.jpg"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Estilos Base: Blanco y Negro Minimalista */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #1a1a1a;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Georgia', serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>-webkit-font-smoothing: antialiased;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Contenedor del Manifiesto Central */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>main {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 60px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.content-box {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 750px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.35rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 0.2px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Estilo de los enlaces dentro del párrafo */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.content-box a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.content-box a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Estilo del Footer */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px 20px 60px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Ajuste de la FOTO: Pequeña, circular y difuminada (tenue) */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.profile-img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 65px; <span class="Apple-converted-space">        </span>/* Tamaño reducido */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 65px;<span class="Apple-converted-space">        </span>/* Tamaño reducido */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>filter: grayscale(100%); /* Blanco y negro */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.5;<span class="Apple-converted-space">        </span>/* "Difuminado" mediante transparencia sutil */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #f0f0f0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: opacity 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.profile-img:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.8;<span class="Apple-converted-space">        </span>/* Se aclara un poco al pasar el mouse */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* El nombre como link a Lubezky.com */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.name-link {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: inherit;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.name {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;<span class="Apple-converted-space">    </span>/* Un poco más pequeño para elegancia */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 1.5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: color 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.name-link:hover .name {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Lista de Redes y Sitios */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-nav {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.85rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-nav li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-nav a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #888; <span class="Apple-converted-space">        </span>/* Gris más suave para no competir visualmente */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: color 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-nav a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #000;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Separador guion */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-nav li:not(:last-child)::after {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>content: "-";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #eee;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Ajustes para móviles */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 600px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.content-box { font-size: 1.2rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;main&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="content-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Navegar no es un acto solitario; es la voluntad de reconocer que el destino de uno es el destino de todos.<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>Al entender que habitamos en &lt;strong&gt;el mismo barco&lt;/strong&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>transformamos el esfuerzo individual en una &lt;a href="https://inteligencia.com"&gt;inteligencia&lt;/a&gt; colectiva capaz de lo imposible.<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>El trabajo en equipo no es solo una estrategia, es la humildad de remar en sintonía para alcanzar<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://unnuevopuntodevista.com"&gt;un nuevo punto de vista&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>agradeciendo siempre las herramientas y la ruta que nos brinda<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://dios.org"&gt;#elpatron&lt;/a&gt; en nuestra búsqueda de &lt;a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk"&gt;el bien común&lt;/a&gt;.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="foto-barco.jpg" alt="Sergio Lubezky A." class="profile-img"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://lubezky.com" class="name-link"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="name"&gt;Sergio Lubezky A.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="social-nav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank"&gt;Linkedin&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://x.com/slubezky" target="_blank"&gt;X&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.facebook.com/sergiolubezky" target="_blank"&gt;Facebook&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.instagram.com/sergiolubezky/" target="_blank"&gt;Instagram&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank"&gt;Podcast&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://coachdefoto.com" target="_blank"&gt;Fotografía&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+    <main>
+        <div class="content-box">
+            <p>
+                Navegar no es un acto solitario; es la voluntad de reconocer que el destino de uno es el destino de todos. 
+                Al entender que habitamos en <strong>el mismo barco</strong>, 
+                transformamos el esfuerzo individual en una <a href="https://inteligencia.com">inteligencia</a> colectiva capaz de lo imposible. 
+                El trabajo en equipo no es solo una estrategia, es la humildad de remar en sintonía para alcanzar 
+                <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>, 
+                agradeciendo siempre las herramientas y la ruta que nos brinda 
+                <a href="https://dios.org">#elpatron</a> en nuestra búsqueda de <a href="REPLACE_WITH_ACTUAL_SPOTIFY_URL">el bien común</a>.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <img src="foto-barco.jpg" alt="Sergio Lubezky A." class="profile-img" loading="lazy">
+        
+        <a href="https://lubezky.com" class="name-link">
+            <span class="name">Sergio Lubezky A.</span>
+        </a>
+        
+        <nav>
+            <ul class="social-nav">
+                <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" rel="noopener">Linkedin</a></li>
+                <li><a href="https://x.com/slubezky" target="_blank" rel="noopener">X</a></li>
+                <li><a href="https://www.facebook.com/sergiolubezky" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="REPLACE_WITH_ACTUAL_SPOTIFY_URL" target="_blank" rel="noopener">Podcast</a></li>
+                <li><a href="https://coachdefoto.com" target="_blank" rel="noopener">Fotografía</a></li>
+            </ul>
+        </nav>
+    </footer>
+
 </body>
 </html>
