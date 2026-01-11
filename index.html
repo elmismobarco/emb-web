@@ -12,7 +12,7 @@
     <meta property="og:image" content="foto-barco.jpg">
 
     <style>
-        /* Estilos Base */
+        /* Estilos Base: Blanco y Negro Minimalista */
         body {
             margin: 0;
             padding: 0;
@@ -26,6 +26,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* Contenedor del Manifiesto Central */
         main {
             flex: 1;
             display: flex;
@@ -41,6 +42,14 @@
             letter-spacing: 0.2px;
         }
 
+        /* Estilo del Título en Negritas */
+        .site-title {
+            font-weight: bold;
+            margin-bottom: 1.5rem; /* Espacio debajo del título */
+            /* Hereda el mismo tamaño de fuente de .content-box */
+        }
+
+        /* Estilo de los enlaces dentro del párrafo */
         .content-box a {
             color: #000;
             text-decoration: none;
@@ -54,28 +63,24 @@
             color: #555;
         }
 
+        /* Estilo del Footer */
         footer {
-            padding: 40px 20px 60px 20px;
+            padding: 50px 20px;
             text-align: center;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
         .profile-img {
-            width: 65px;
-            height: 65px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
             margin-bottom: 15px;
             object-fit: cover;
-            filter: grayscale(100%);
-            opacity: 0.6; /* Increased slightly for better visibility */
-            border: 1px solid #f0f0f0;
-            transition: opacity 0.3s ease;
+            /* NOTA: Se eliminó el filtro grayscale para que sea a color */
+            border: 1px solid #eee;
         }
 
-        .profile-img:hover {
-            opacity: 1;
-        }
-
+        /* El nombre como link a Lubezky.com */
         .name-link {
             text-decoration: none;
             color: inherit;
@@ -84,7 +89,7 @@
         .name {
             display: block;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 1rem;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-bottom: 25px;
@@ -95,6 +100,7 @@
             color: #666;
         }
 
+        /* Lista de Redes y Sitios */
         .social-nav {
             list-style: none;
             padding: 0;
@@ -112,7 +118,7 @@
         }
 
         .social-nav a {
-            color: #888;
+            color: #666;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -121,13 +127,14 @@
             color: #000;
         }
 
-        /* Separador guion - Improved contrast */
+        /* Separador guion */
         .social-nav li:not(:last-child)::after {
             content: "-";
             margin-left: 12px;
-            color: #ccc; 
+            color: #ccc;
         }
 
+        /* Ajustes para móviles */
         @media (max-width: 600px) {
             .content-box { font-size: 1.2rem; }
         }
@@ -137,36 +144,11 @@
 
     <main>
         <div class="content-box">
+            <div class="site-title">El Mismo Barco</div>
+            
             <p>
                 Navegar no es un acto solitario; es la voluntad de reconocer que el destino de uno es el destino de todos. 
                 Al entender que habitamos en <strong>el mismo barco</strong>, 
                 transformamos el esfuerzo individual en una <a href="https://inteligencia.com">inteligencia</a> colectiva capaz de lo imposible. 
                 El trabajo en equipo no es solo una estrategia, es la humildad de remar en sintonía para alcanzar 
-                <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>, 
-                agradeciendo siempre las herramientas y la ruta que nos brinda 
-                <a href="https://dios.org">#elpatron</a> en nuestra búsqueda de <a href="REPLACE_WITH_ACTUAL_SPOTIFY_URL">el bien común</a>.
-            </p>
-        </div>
-    </main>
-
-    <footer>
-        <img src="foto-barco.jpg" alt="Sergio Lubezky A." class="profile-img" loading="lazy">
-        
-        <a href="https://lubezky.com" class="name-link">
-            <span class="name">Sergio Lubezky A.</span>
-        </a>
-        
-        <nav>
-            <ul class="social-nav">
-                <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" rel="noopener">Linkedin</a></li>
-                <li><a href="https://x.com/slubezky" target="_blank" rel="noopener">X</a></li>
-                <li><a href="https://www.facebook.com/sergiolubezky" target="_blank" rel="noopener">Facebook</a></li>
-                <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank" rel="noopener">Instagram</a></li>
-                <li><a href="REPLACE_WITH_ACTUAL_SPOTIFY_URL" target="_blank" rel="noopener">Podcast</a></li>
-                <li><a href="https://coachdefoto.com" target="_blank" rel="noopener">Fotografía</a></li>
-            </ul>
-        </nav>
-    </footer>
-
-</body>
-</html>
+                <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>,
