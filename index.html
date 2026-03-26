@@ -11,8 +11,84 @@
     <meta property="og:description" content="Navegar es un acto colectivo. Una reflexión sobre el trabajo en equipo, la empatía y la inteligencia compartida.">
     <meta property="og:image" content="foto-barco.jpg">
 
+    <!-- SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/",
+            "https://x.com/slubezky",
+            "https://www.facebook.com/sergiolubezky",
+            "https://www.instagram.com/sergiolubezky/"
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://elmismobarco.com/#website",
+          "url": "https://elmismobarco.com",
+          "name": "El Mismo Barco",
+          "inLanguage": "es",
+          "publisher": {
+            "@id": "https://lubezky.com/#sergio"
+          }
+        },
+
+        {
+          "@type": "WebPage",
+          "@id": "https://elmismobarco.com/#webpage",
+          "url": "https://elmismobarco.com",
+          "name": "El Mismo Barco",
+          "isPartOf": {
+            "@id": "https://elmismobarco.com/#website"
+          },
+          "about": {
+            "@id": "https://lubezky.com/#sergio"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://elmismobarco.com/foto-barco.jpg"
+          }
+        },
+
+        {
+          "@type": "CreativeWork",
+          "name": "El Mismo Barco",
+          "author": {
+            "@id": "https://lubezky.com/#sergio"
+          },
+          "about": [
+            "Inteligencia colectiva",
+            "Trabajo en equipo",
+            "Empatía",
+            "Interdependencia"
+          ]
+        },
+
+        {
+          "@type": "PodcastSeries",
+          "name": "El Bien Común",
+          "url": "https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk",
+          "sameAs": [
+            "https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h"
+          ],
+          "creator": {
+            "@id": "https://lubezky.com/#sergio"
+          }
+        }
+
+      ]
+    }
+    </script>
+
     <style>
-        /* Estilos Base: Blanco y Negro Minimalista */
         body {
             margin: 0;
             padding: 0;
@@ -26,7 +102,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Contenedor del Manifiesto Central */
         main {
             flex: 1;
             display: flex;
@@ -42,14 +117,11 @@
             letter-spacing: 0.2px;
         }
 
-        /* Estilo del Título en Negritas */
         .site-title {
             font-weight: bold;
-            margin-bottom: 1.5rem; /* Espacio debajo del título */
-            /* Hereda el mismo tamaño de fuente de .content-box */
+            margin-bottom: 1.5rem;
         }
 
-        /* Estilo de los enlaces dentro del párrafo */
         .content-box a {
             color: #000;
             text-decoration: none;
@@ -63,7 +135,6 @@
             color: #555;
         }
 
-        /* Estilo del Footer */
         footer {
             padding: 50px 20px;
             text-align: center;
@@ -76,11 +147,9 @@
             border-radius: 50%;
             margin-bottom: 8px;
             object-fit: cover;
-            /* NOTA: Se eliminó el filtro grayscale para que sea a color */
             border: 1px solid #eee;
         }
 
-        /* El nombre como link a Lubezky.com */
         .name-link {
             text-decoration: none;
             color: inherit;
@@ -93,14 +162,8 @@
             letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-bottom: 10px;
-            transition: color 0.3s ease;
         }
 
-        .name-link:hover .name {
-            color: #666;
-        }
-
-        /* Lista de Redes y Sitios */
         .social-nav {
             list-style: none;
             padding: 0;
@@ -120,26 +183,24 @@
         .social-nav a {
             color: #666;
             text-decoration: none;
-            transition: color 0.3s;
         }
 
         .social-nav a:hover {
             color: #000;
         }
 
-        /* Separador guion */
         .social-nav li:not(:last-child)::after {
             content: "-";
             margin-left: 12px;
             color: #ccc;
         }
 
-        /* Ajustes para móviles */
         @media (max-width: 600px) {
             .content-box { font-size: 1.2rem; }
         }
     </style>
 </head>
+
 <body>
 
     <main>
@@ -154,7 +215,8 @@
                 El trabajo en equipo no es solo una estrategia, es la humildad de remar en sintonía para alcanzar 
                 <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>, 
                 agradeciendo siempre las herramientas y la ruta que nos brinda 
-                <a href="https://dios.org">#elpatron</a> en nuestra búsqueda de <a href="https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h">El Bien Común</a>.
+                <a href="https://dios.org">#elpatron</a> en nuestra búsqueda de 
+                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk">El Bien Común</a>.
             </p>
         </div>
     </main>
@@ -172,7 +234,7 @@
             <li><a href="https://www.facebook.com/sergiolubezky" target="_blank">Facebook</a></li>
             <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
             <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-            <li><a href="https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h" target="_blank">Podcast El Bien Común</a></li>
+            <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast El Bien Común</a></li>
         </ul>
     </footer>
 
