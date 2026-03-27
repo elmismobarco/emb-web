@@ -1,242 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>El Mismo Barco | Sergio Lubezky A.</title>
-    <meta name="description" content="Una reflexión de Sergio Lubezky sobre la interdependencia, la empatía y la inteligencia compartida en sistemas donde todos navegamos juntos.">
+<main style="max-width:700px; font-size:1.2rem; margin:0 auto;">
 
-    <meta property="og:title" content="El Mismo Barco | Sergio Lubezky A.">
-    <meta property="og:description" content="Navegar es un acto colectivo. Una reflexión sobre el trabajo en equipo, la empatía y la inteligencia compartida.">
-    <meta property="og:image" content="foto-barco.jpg">
+  <h1 style="margin-bottom:16px;">No estás solo.</h1>
 
-    <!-- SCHEMA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
+  <p style="margin-bottom:12px;">
+    Aunque a veces lo parezca, todos vamos en el mismo barco.
+  </p>
 
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com",
-          "sameAs": [
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://www.facebook.com/sergiolubezky",
-            "https://www.instagram.com/sergiolubezky/"
-          ]
-        },
+  <p style="margin-bottom:12px;">
+    Hay momentos en los que todo se siente confuso. Momentos donde dudas, donde te cuestionas, donde no sabes si vas bien o mal.
+  </p>
 
-        {
-          "@type": "WebSite",
-          "@id": "https://elmismobarco.com/#website",
-          "url": "https://elmismobarco.com",
-          "name": "El Mismo Barco",
-          "inLanguage": "es",
-          "publisher": {
-            "@id": "https://lubezky.com/#sergio"
-          }
-        },
+  <p style="margin-bottom:12px;">
+    Este espacio es para eso. Para detenerte un poco. Para leer algo que, quizá, también te está pasando a ti.
+  </p>
 
-        {
-          "@type": "WebPage",
-          "@id": "https://elmismobarco.com/#webpage",
-          "url": "https://elmismobarco.com",
-          "name": "El Mismo Barco",
-          "isPartOf": {
-            "@id": "https://elmismobarco.com/#website"
-          },
-          "about": {
-            "@id": "https://lubezky.com/#sergio"
-          },
-          "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "url": "https://elmismobarco.com/foto-barco.jpg"
-          }
-        },
+  <p style="margin-bottom:12px;">
+    No para tener respuestas.  
+    Sino para sentir que no eres el único haciéndote las preguntas.
+  </p>
 
-        {
-          "@type": "CreativeWork",
-          "name": "El Mismo Barco",
-          "author": {
-            "@id": "https://lubezky.com/#sergio"
-          },
-          "about": [
-            "Inteligencia colectiva",
-            "Trabajo en equipo",
-            "Empatía",
-            "Interdependencia"
-          ]
-        },
+  <p style="margin-bottom:12px;">
+    <a href="/reflexiones">Leer reflexiones</a>
+  </p>
 
-        {
-          "@type": "PodcastSeries",
-          "name": "El Bien Común",
-          "url": "https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk",
-          "sameAs": [
-            "https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h"
-          ],
-          "creator": {
-            "@id": "https://lubezky.com/#sergio"
-          }
-        }
+  <p style="margin-bottom:12px;">
+    <a href="/mapa">Explorar el mapa</a>
+  </p>
 
-      ]
-    }
-    </script>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #ffffff;
-            color: #1a1a1a;
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 20px;
-        }
-
-        .content-box {
-            max-width: 750px;
-            text-align: center;
-            font-size: 1.35rem;
-            letter-spacing: 0.2px;
-        }
-
-        .site-title {
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-        }
-
-        .content-box a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px solid #ddd;
-            transition: all 0.3s ease;
-        }
-
-        .content-box a:hover {
-            border-bottom: 1px solid #000;
-            color: #555;
-        }
-
-        footer {
-            padding: 50px 20px;
-            text-align: center;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-        .profile-img {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-            margin-bottom: 8px;
-            object-fit: cover;
-            border: 1px solid #eee;
-        }
-
-        .name-link {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .name {
-            display: block;
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        .social-nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            font-size: 0.85rem;
-        }
-
-        .social-nav li {
-            display: flex;
-            align-items: center;
-        }
-
-        .social-nav a {
-            color: #666;
-            text-decoration: none;
-        }
-
-        .social-nav a:hover {
-            color: #000;
-        }
-
-        .social-nav li:not(:last-child)::after {
-            content: "-";
-            margin-left: 12px;
-            color: #ccc;
-        }
-
-        @media (max-width: 600px) {
-            .content-box { font-size: 1.2rem; }
-        }
-    </style>
-</head>
-
-<body>
-
-    <main>
-        <div class="content-box">
-            <div class="site-title">El Mismo Barco</div>
-            
-            <p>
-                Navegar no es un acto solitario; es la voluntad de reconocer que el destino de uno es el destino de todos. 
-                Al entender que habitamos en <strong>el mismo barco</strong>, 
-                transformamos el esfuerzo individual en una <a href="https://inteligencia.com">inteligencia</a> colectiva capaz de lo imposible. 
-                Cuando esta comprensión del sistema exige decisiones claras y responsabilidad directa, ese rol se ejerce desde el <a href="https://liderazgointerino.com">liderazgo interino</a>.
-                El trabajo en equipo no es solo una estrategia, es la humildad de remar en sintonía para alcanzar 
-                <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>, 
-                agradeciendo siempre las herramientas y la ruta que nos brinda 
-                <a href="https://dios.org">#elpatron</a> en nuestra búsqueda de 
-                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk">El Bien Común</a>.
-            </p>
-        </div>
-    </main>
-
-    <footer>
-        <img src="foto-barco.jpg" alt="Sergio Lubezky A." class="profile-img">
-        
-        <a href="https://lubezky.com" class="name-link">
-            <span class="name">Sergio Lubezky A.</span>
-        </a>
-        
-        <ul class="social-nav">
-            <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">Linkedin</a></li>
-            <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-            <li><a href="https://www.facebook.com/sergiolubezky" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-            <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-            <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast El Bien Común</a></li>
-        </ul>
-    </footer>
-
-</body>
-</html>
+</main>
