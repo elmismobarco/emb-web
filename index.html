@@ -8,12 +8,42 @@
 
     <!-- SCHEMA -->
     <script type="application/ld+json">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com"
+    },
+    {
       "@type": "WebSite",
+      "@id": "https://elmismobarco.com/#website",
+      "url": "https://elmismobarco.com/",
       "name": "El mismo barco",
-      "url": "https://elmismobarco.com"
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Reflexiones sobre resiliencia, comunidad y el propósito compartido en tiempos de cambio."
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://elmismobarco.com/#collection",
+      "url": "https://elmismobarco.com/",
+      "name": "Reflexiones sobre Resiliencia y Comunidad",
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "about": [
+        { "@type": "Thing", "name": "Resiliencia Organizacional" },
+        { "@type": "Thing", "name": "Empatía" },
+        { "@type": "Thing", "name": "Liderazgo Humano" }
+      ],
+      "mentions": [
+        { "@type": "WebSite", "name": "Liderazgo Interino", "url": "https://liderazgointerino.com/" }
+      ]
     }
+  ]
+}
+</script>
     </script>
 
     <style>
